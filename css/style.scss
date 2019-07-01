@@ -1,0 +1,45 @@
+/*Mixins and Essentials*/
+
+$sans: 'Roboto',sans-serif;
+$mono: 'Inconsolata',sans-serif;
+
+@mixin transition($time){
+  -webkit-transition: all$time ease;
+  -moz-transition: all$time ease;
+  -o-transition: all$time ease;
+  transition: all$time ease;
+}
+
+@mixin smoothtransition($time){
+	-webkit-transition: all$time cubic-bezier(.43,.13,.15,.99);
+	-moz-transition: all$time cubic-bezier(.43,.13,.15,.99);
+	-o-transition: all$time cubic-bezier(.43,.13,.15,.99);
+	transition: all$time cubic-bezier(.43,.13,.15,.99);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+/*Body*/
+
+body
+{
+	margin: 0px;
+}
