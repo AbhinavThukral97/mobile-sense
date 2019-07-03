@@ -76,8 +76,24 @@ button.listen {
   cursor: pointer;
 }
 
+button.face {
+  padding: 10px 20px;
+  background: #ffcc66;
+  color: #FFF;
+  font-family: $sans;
+  border: 0;
+  font-size: 1.1em;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
 button.listen.running {
   animation: listening 1s infinite;
+}
+
+h4 {
+  font-family: $sans;
 }
 
 p.transcript {
@@ -86,3 +102,26 @@ p.transcript {
   line-height: 1.5;
   margin: 30px 0px;
 }
+
+#video-stream {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 20px 0px;
+  transform-origin: center center;
+  transform: rotateY(-180deg);
+
+  .emoji {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5em;
+  }
+
+  #face_video_canvas
+  {
+    width: 100% !important;
+  }
+}
+
