@@ -108,20 +108,12 @@ p.transcript {
   top: 0;
   left: 0;
   margin: 20px 0px;
-  transform-origin: center center;
-  transform: rotateY(-180deg);
 
   .emoji {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 1.5em;
-  }
-
-  #face_video_canvas
-  {
-    width: 100% !important;
+    top: 20px;
+    left: 20px;
+    font-size: 3em;
   }
 }
 
