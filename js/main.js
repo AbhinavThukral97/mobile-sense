@@ -35,6 +35,7 @@ recognition.onresult = function(event) {
 };
 
 $('button.listen').click(function(){
+	console.log('Listening');
 	recognition.start();
 });
 
